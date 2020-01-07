@@ -1,0 +1,10 @@
+(defclass room ()
+   (
+		(number :accessor room-number)
+		(capacity :accessor room-capacity)
+   )
+)
+(defmethod print-room ((object room))
+   (format t "Room number is ~d~%" (room-number object))
+	(format t "Room capacity is ~d~%" (room-capacity object))
+)

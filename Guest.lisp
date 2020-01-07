@@ -1,0 +1,10 @@
+(defclass guest ()
+   (
+		(id :accessor guest-id)
+		(g-name :accessor guest-name)
+   )
+)
+(defmethod print-guest ((object guest))
+   (format t "Guest ID is ~d~%" (guest-id object))
+	(format t "Guest name is ~s~%" (guest-name object))
+)
